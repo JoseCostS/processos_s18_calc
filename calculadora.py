@@ -1,16 +1,13 @@
 class Calculadora:
-    def somar(num1, num2):
-        pass
     
+    def somar(num1, num2):
+        return int(num1 + num2)
+  
     def maiorNumero(num1, num2):
         if num1 == num2:
             return 'Os dois números são iguais'
-        if num1 > num2:
-            return f'O maior número é {num1}'
-        else:
-            return f'O maior número é {num2}'
-        
+        return f'O maior número é {max(num1, num2)}'
+
+    
     def diferenca(numero1, numero2):
-        # Não importa a ordem
-        # o resultado da diferença deve ser positivo
-        pass
+        return abs(numero1 - numero2)
